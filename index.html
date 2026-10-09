@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Hot Bottle Dog — an Irish games studio. Currently in development: BallouT, a portrait mobile puzzle with absolute movement."
+    />
+    <meta name="theme-color" content="#0A5230" />
+    <title>Hot Bottle Dog — Irish Games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Outfit:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top">Hot Bottle Dog</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#ballout">BallouT</a>
+        <a href="#updates">Updates</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="brand">
+        <div class="hero-visual">
+          <div class="felt" aria-hidden="true"></div>
+          <div class="felt-grain" aria-hidden="true"></div>
+          <svg class="board" viewBox="0 0 720 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <!-- Crossword-style rails -->
+            <g class="rails" stroke="#6B4226" stroke-width="10" stroke-linecap="square" fill="none">
+              <path d="M90 160 H280 V320 H160 V480 H320 V640 H90" />
+              <path d="M400 120 V300 H560 V460 H430 V620 H630" />
+              <path d="M200 700 H520 V780" />
+            </g>
+            <g class="holes" fill="#0A0A0A">
+              <circle cx="160" cy="480" r="22" />
+              <circle cx="560" cy="460" r="22" />
+              <circle cx="430" cy="620" r="18" />
+            </g>
+            <g class="exit" fill="none" stroke="#D4A84B" stroke-width="6">
+              <circle cx="520" cy="780" r="28" />
+              <circle cx="520" cy="780" r="14" fill="#148A4E" stroke="none" />
+            </g>
+          </svg>
+          <div class="hero-veil" aria-hidden="true"></div>
+          <div class="hero-balls" id="hero-balls" aria-hidden="true">
+            <div class="phys-ball" style="--ball:#FFD54A;--ink:#1A120C">2</div>
+            <div class="phys-ball" style="--ball:#D62828;--ink:#1A120C">1</div>
+            <div class="phys-ball" style="--ball:#2F6FE0;--ink:#1A120C">5</div>
+            <div class="phys-ball" style="--ball:#1A1A1A;--ink:#1A120C">7</div>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="locale">Ireland</p>
+          <h1 id="brand">Hot Bottle Dog</h1>
+          <p class="lede">
+            An Irish games studio. One sharp puzzle on the table — more to come.
+          </p>
+          <div class="cta-row">
+            <a class="cta" href="#ballout">Meet BallouT</a>
+            <a class="cta cta-quiet" href="mailto:hello@hotbottledog.com">Say hello</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature" id="ballout" aria-labelledby="ballout-title">
+        <div class="feature-inner">
+          <p class="eyebrow">In development</p>
+          <h2 id="ballout-title">BallouT</h2>
+          <p class="feature-lede">
+            A portrait mobile puzzle with absolute movement. Numbered balls keep
+            rolling across a crossword-style grid until a wall, a hole, or the
+            exit stops them. Every swipe is a commitment.
+          </p>
+          <ul class="traits">
+            <li>Snooker-club craft — felt, brass, and numbered balls</li>
+            <li>Built for daily habits — clear in seconds, deep for hours</li>
+            <li>Godot · mobile-first · original Irish IP</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="updates" id="updates" aria-labelledby="updates-title">
+        <div class="updates-inner">
+          <div class="updates-head">
+            <div>
+              <p class="eyebrow">Bluesky</p>
+              <h2 id="updates-title">Studio updates</h2>
+              <p class="updates-lede">Notes from the table — posts as they land.</p>
+            </div>
+            <a
+              class="bsky-follow"
+              href="https://bsky.app/profile/thhru.bsky.social"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Follow @thhru
+            </a>
+          </div>
+          <div
+            class="bsky-feed"
+            id="bsky-feed"
+            data-handle="thhru.bsky.social"
+            aria-live="polite"
+          >
+            <p class="bsky-status">Loading posts…</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner">
+          <h2 id="contact-title">Get in touch</h2>
+          <p>
+            Press, funding, or just curious — we’d love to hear from you.
+          </p>
+          <a class="mail" href="mailto:hello@hotbottledog.com">hello@hotbottledog.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Hot Bottle Dog · Made in Ireland</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
