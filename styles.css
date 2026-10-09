@@ -13,6 +13,8 @@
   --wood: #6b4226;
   --ink: #1a120c;
   --font-display: "Cinzel", "Times New Roman", serif;
+  --font-brand: "Bricolage Grotesque", "Outfit", sans-serif;
+  --font-metal: "Metal Mania", "Impact", fantasy;
   --font-body: "Outfit", "Segoe UI", sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -74,7 +76,7 @@ a {
 }
 
 .wordmark {
-  font-family: var(--font-display);
+  font-family: var(--font-brand);
   font-weight: 700;
   font-size: 0.82rem;
   letter-spacing: 0.06em;
@@ -98,6 +100,59 @@ a {
   text-decoration: none;
   color: var(--muted);
   transition: color 0.25s var(--ease);
+}
+
+.nav-falling {
+  font-family: var(--font-metal);
+  font-weight: 400;
+  font-size: 1.15rem;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.fa-letters span {
+  display: inline-block;
+  line-height: 0.85;
+  vertical-align: baseline;
+}
+
+.fa-letters span:nth-child(odd) {
+  color: #00e5ff;
+}
+
+.fa-letters span:nth-child(even) {
+  color: #ff1493;
+}
+
+.fa-letters span:nth-child(1),
+.fa-letters span:nth-child(12) {
+  font-size: 1em;
+}
+
+.fa-letters span:nth-child(2),
+.fa-letters span:nth-child(11) {
+  font-size: 0.84em;
+}
+
+.fa-letters span:nth-child(3),
+.fa-letters span:nth-child(10) {
+  font-size: 0.7em;
+}
+
+.fa-letters span:nth-child(4),
+.fa-letters span:nth-child(9) {
+  font-size: 0.58em;
+}
+
+.fa-letters span:nth-child(5),
+.fa-letters span:nth-child(8) {
+  font-size: 0.48em;
+}
+
+.fa-letters span:nth-child(6),
+.fa-letters span:nth-child(7) {
+  font-size: 0.38em;
 }
 
 .nav a:hover,
@@ -237,7 +292,7 @@ a {
 
 .hero-copy h1 {
   margin: 0;
-  font-family: var(--font-display);
+  font-family: var(--font-brand);
   font-weight: 700;
   font-size: clamp(2.4rem, 7.5vw, 4.6rem);
   line-height: 1.08;
@@ -387,6 +442,20 @@ a {
   font-weight: 700;
   letter-spacing: 0.04em;
   color: var(--ivory);
+}
+
+#falling-angel {
+  scroll-margin-top: 2.5rem;
+}
+
+#falling-angel-title {
+  font-family: var(--font-metal);
+  font-weight: 400;
+  font-size: clamp(2.35rem, 9vw, 4.6rem);
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  padding-top: 0.12em;
+  text-transform: uppercase;
 }
 
 .feature-lede,
