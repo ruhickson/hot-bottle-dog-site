@@ -423,7 +423,7 @@ function initHeroBallPhysics() {
   window.addEventListener("pointercancel", onPointerUp);
 }
 
-const BSKY_HANDLE = "thhru.bsky.social";
+const BSKY_HANDLE = "hotbottledog.com";
 const BSKY_LIMIT = 5;
 
 function postUrl(uri) {
@@ -630,14 +630,14 @@ async function loadBlueskyFeed() {
     const items = (data.feed || []).slice(0, BSKY_LIMIT);
 
     if (!items.length) {
-      root.innerHTML = `<p class="bsky-status">No posts yet — <a href="https://bsky.app/profile/${escapeHtml(handle)}" target="_blank" rel="noopener noreferrer">follow @thhru on Bluesky</a>.</p>`;
+      root.innerHTML = `<p class="bsky-status">No posts yet — <a href="https://bsky.app/profile/${escapeHtml(handle)}" target="_blank" rel="noopener noreferrer">follow @${escapeHtml(handle)} on Bluesky</a>.</p>`;
       return;
     }
 
     root.innerHTML = items.map(renderPost).join("");
   } catch (err) {
     console.error(err);
-    root.innerHTML = `<p class="bsky-status">Couldn’t load the feed. <a href="https://bsky.app/profile/${escapeHtml(handle)}" target="_blank" rel="noopener noreferrer">Open @thhru on Bluesky</a>.</p>`;
+    root.innerHTML = `<p class="bsky-status">Couldn’t load the feed. <a href="https://bsky.app/profile/${escapeHtml(handle)}" target="_blank" rel="noopener noreferrer">Open @${escapeHtml(handle)} on Bluesky</a>.</p>`;
   }
 }
 

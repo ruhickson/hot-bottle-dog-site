@@ -28,7 +28,7 @@ npx --yes serve .
 
 ## Customise
 
-- Contact email: replace `hello@hotbottledog.com` in `index.html` when you have a real inbox
+- Contact email: `woof@hotbottledog.com` in `index.html`
 - Domain: Netlify → Domain settings → add `hotbottledog.com` (or similar)
 
 ## Stack

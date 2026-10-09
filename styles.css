@@ -86,6 +86,8 @@ a {
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 1.5rem;
   font-size: 0.9rem;
   font-weight: 500;
@@ -365,6 +367,10 @@ a {
   padding: clamp(3.5rem, 10vh, 6rem) clamp(1.25rem, 4vw, 3rem);
 }
 
+.game + .game {
+  margin-top: clamp(3rem, 8vh, 4.5rem);
+}
+
 .eyebrow {
   margin: 0 0 0.6rem;
   font-size: 0.75rem;
@@ -383,11 +389,16 @@ a {
   color: var(--ivory);
 }
 
-.feature-lede {
+.feature-lede,
+.feature-note {
   margin: 1.25rem 0 0;
   font-size: 1.1rem;
   font-weight: 300;
   color: var(--muted);
+}
+
+.feature-note {
+  margin-top: 0.85rem;
 }
 
 .traits {
