@@ -15,8 +15,15 @@
   --font-display: "Cinzel", "Times New Roman", serif;
   --font-brand: "Bricolage Grotesque", "Outfit", sans-serif;
   --font-metal: "Metal Mania", "Impact", fantasy;
+  --font-celtic: "Celtic Gaelige", "Times New Roman", serif;
   --font-body: "Outfit", "Segoe UI", sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@font-face {
+  font-family: "Celtic Gaelige";
+  src: url("celtic_gaelige.ttf") format("truetype");
+  font-display: swap;
 }
 
 *,
@@ -102,15 +109,6 @@ a {
   transition: color 0.25s var(--ease);
 }
 
-.nav-falling {
-  font-family: var(--font-metal);
-  font-weight: 400;
-  font-size: 1.15rem;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
 .fa-letters span {
   display: inline-block;
   line-height: 0.85;
@@ -158,6 +156,22 @@ a {
 .nav a:hover,
 .nav a:focus-visible {
   color: var(--ivory);
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 0.55rem 1rem;
+    padding: 0.9rem 1.1rem 0.35rem;
+  }
+
+  .nav {
+    flex: 1 1 14rem;
+    justify-content: flex-end;
+    gap: 0.35rem 0.85rem;
+    font-size: 0.82rem;
+  }
 }
 
 /* —— Hero —— */
@@ -418,12 +432,39 @@ a {
 
 .feature-inner {
   position: relative;
-  max-width: 40rem;
+  max-width: 72rem;
   padding: clamp(3.5rem, 10vh, 6rem) clamp(1.25rem, 4vw, 3rem);
 }
 
 .game + .game {
   margin-top: clamp(3rem, 8vh, 4.5rem);
+}
+
+.game:not(.game-split) {
+  max-width: 40rem;
+}
+
+.game-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(12rem, 22rem);
+  gap: clamp(1.25rem, 3vw, 2.75rem);
+  align-items: center;
+}
+
+.game-demo {
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(212, 168, 75, 0.35);
+}
+
+@media (max-width: 720px) {
+  .game-split {
+    grid-template-columns: 1fr;
+  }
+
+  .game-demo {
+    max-width: 22rem;
+  }
 }
 
 .eyebrow {
@@ -444,8 +485,24 @@ a {
   color: var(--ivory);
 }
 
+#glenmafeen,
 #falling-angel {
   scroll-margin-top: 2.5rem;
+}
+
+.game-hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 1.15rem;
+}
+
+#glenmafeen-title {
+  font-family: var(--font-celtic);
+  font-weight: 400;
+  font-size: clamp(3.2rem, 8vw, 5rem);
+  letter-spacing: 0;
+  line-height: 1.05;
 }
 
 #falling-angel-title {

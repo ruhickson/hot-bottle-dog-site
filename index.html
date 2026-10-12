@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="An Irish games studio, developing mobile and PC. In development: BallouT — a snooker-themed mobile puzzle game with daily challenges, launching on iPhone and Android in December 2026. Falling Angel — a constantly accelerating roguelike FPS with guns, demons, and lots and lots of speed. Releasing late 2027."
+      content="An Irish games studio, developing mobile and PC. In development: BallouT, a snooker-themed mobile puzzle game with daily challenges, launching on iPhone and Android in December 2026. Glenmafeen, a murder-mystery, wine-tasting, monastic adventure in 12th century Ireland, releasing late 2027. Falling Angel, a constantly accelerating roguelike FPS with guns, demons, and lots and lots of speed, releasing in 2028."
     />
     <meta name="theme-color" content="#0A5230" />
     <title>Hot Bottle Dog</title>
@@ -25,7 +25,8 @@
       <a class="wordmark" href="#top">Hot Bottle Dog</a>
       <nav class="nav" aria-label="Primary">
         <a href="#ballout">BallouT</a>
-        <a class="nav-falling" href="#falling-angel" aria-label="Falling Angel"><span class="fa-letters" aria-hidden="true"><span>F</span><span>a</span><span>l</span><span>l</span><span>i</span><span>n</span><span>g</span> <span>A</span><span>n</span><span>g</span><span>e</span><span>l</span></span></a>
+        <a href="#glenmafeen">Glenmafeen</a>
+        <a href="#falling-angel">Falling Angel</a>
         <a href="#updates">Updates</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -66,7 +67,7 @@
           <p class="locale"></p>
           <h1 id="brand">Hot Bottle Dog</h1>
           <p class="lede">
-            An Irish games studio currently building puzzle and FPS games
+            An Irish games studio currently building puzzle, adventure, and FPS games
           </p>
           <div class="cta-row">
             <a class="cta" href="#ballout">Meet BallouT</a>
@@ -78,24 +79,43 @@
       <section class="feature" id="ballout" aria-labelledby="ballout-title">
         <div class="feature-inner">
           <p class="eyebrow">In development</p>
-          <article class="game">
-            <h2 id="ballout-title">BallouT</h2>
+          <article class="game game-split">
+            <div class="game-copy">
+              <h2 id="ballout-title">BallouT</h2>
+              <p class="feature-lede">
+                A mobile puzzle game designed to massage your frontal lobe. Solve
+                increasingly challenging puzzles, customise the theme to your
+                favourite style, come back for daily challenges and points, and
+                create your own tables to share with friends.
+              </p>
+              <p class="feature-note">Launching on iPhone and Android in December 2026.</p>
+            </div>
+            <img
+              class="game-demo"
+              src="balloutdemo.gif"
+              width="480"
+              height="480"
+              alt="BallouT gameplay: numbered balls rolling across a green puzzle grid"
+            />
+          </article>
+          <article class="game" id="glenmafeen" aria-labelledby="glenmafeen-title">
+            <h2 id="glenmafeen-title">Glenmafeen</h2>
+            <img
+              class="game-hero"
+              src="gmf.png"
+              alt="A river valley in the hills, the setting for Glenmafeen"
+            />
             <p class="feature-lede">
-              A mobile puzzle game designed to massage your frontal lobe. Solve
-              increasingly challenging puzzles, customise the theme to your
-              favourite style, come back for daily challenges and points, and
-              create your own tables to share with friends.
+              A murder-mystery, wine-tasting, monastic adventure in 12th century
+              Ireland.
             </p>
-            <p class="feature-note">Launching on iPhone and Android in December 2026.</p>
-            <ul class="traits">
-              <li>Godot · mobile-first · original Irish IP</li>
-            </ul>
+            <p class="feature-note">Releasing late 2027.</p>
           </article>
           <article class="game" id="falling-angel" aria-labelledby="falling-angel-title">
             <h2 id="falling-angel-title" aria-label="Falling Angel"><span class="fa-letters" aria-hidden="true"><span>F</span><span>a</span><span>l</span><span>l</span><span>i</span><span>n</span><span>g</span> <span>A</span><span>n</span><span>g</span><span>e</span><span>l</span></span></h2>
             <p class="feature-lede">
               A constantly accelerating roguelike FPS with guns, demons, and
-              lots and lots of speed. Releasing late 2027.
+              lots and lots of speed. Releasing in 2028.
             </p>
           </article>
         </div>
@@ -132,7 +152,7 @@
         <div class="contact-inner">
           <h2 id="contact-title">Get in touch</h2>
           <p>
-            Press, funding, or just curious — we’d love to hear from you.
+            Press, funding, or just curious. We’d love to hear from you.
           </p>
           <a class="mail" href="mailto:woof@hotbottledog.com">woof@hotbottledog.com</a>
         </div>
@@ -140,7 +160,7 @@
     </main>
 
     <footer class="site-footer">
-      <p>© <span id="year"></span> Hot Bottle Dog · Made in Ireland</p>
+      <p>© <span id="year"></span> Hot Bottle Dog. Made in Ireland</p>
     </footer>
 
     <script src="main.js"></script>

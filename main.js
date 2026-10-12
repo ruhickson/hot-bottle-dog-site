@@ -630,7 +630,7 @@ async function loadBlueskyFeed() {
     const items = (data.feed || []).slice(0, BSKY_LIMIT);
 
     if (!items.length) {
-      root.innerHTML = `<p class="bsky-status">No posts yet — <a href="https://bsky.app/profile/${escapeHtml(handle)}" target="_blank" rel="noopener noreferrer">follow @${escapeHtml(handle)} on Bluesky</a>.</p>`;
+      root.innerHTML = `<p class="bsky-status">No posts yet. <a href="https://bsky.app/profile/${escapeHtml(handle)}" target="_blank" rel="noopener noreferrer">Follow @${escapeHtml(handle)} on Bluesky</a>.</p>`;
       return;
     }
 
