@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="An Irish games studio, developing mobile and PC. In development: BallouT, a snooker-themed mobile puzzle game with daily challenges, launching on iPhone and Android in December 2026. Glenmafeen, a murder-mystery, wine-tasting, monastic adventure in 12th century Ireland, releasing late 2027. Falling Angel, a constantly accelerating roguelike FPS with guns, demons, and lots and lots of speed, releasing in 2028."
+      content="An Irish games studio, developing mobile and PC. In development: BallouT, a snooker-themed mobile puzzle game with daily challenges, launching on iPhone and Android in December 2026. The Enterprise Centre, a short liminal horror adventure created as part of a Halloween Game Jam. Glenmafeen, a murder-mystery, wine-tasting, monastic adventure in 12th century Ireland, releasing late 2027. Falling Angel, a constantly accelerating roguelike FPS with guns, demons, and lots and lots of speed, releasing in 2028."
     />
     <meta name="theme-color" content="#0A5230" />
     <title>Hot Bottle Dog</title>
@@ -16,15 +16,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon.png" type="image/png" sizes="32x32" />
   </head>
   <body>
     <div class="noise" aria-hidden="true"></div>
 
     <header class="site-header">
-      <a class="wordmark" href="#top">Hot Bottle Dog</a>
+      <a class="wordmark" href="#top">
+        <img class="logo" src="hbd.png" alt="" width="172" height="151" />
+        Hot Bottle Dog
+      </a>
       <nav class="nav" aria-label="Primary">
         <a href="#ballout">BallouT</a>
+        <a href="#enterprise-centre">The Enterprise Centre</a>
         <a href="#glenmafeen">Glenmafeen</a>
         <a href="#falling-angel">Falling Angel</a>
         <a href="#updates">Updates</a>
@@ -67,7 +72,7 @@
           <p class="locale"></p>
           <h1 id="brand">Hot Bottle Dog</h1>
           <p class="lede">
-            An Irish games studio currently building puzzle, adventure, and FPS games
+            An Irish games studio currently building puzzle, horror, adventure, and FPS games
           </p>
           <div class="cta-row">
             <a class="cta" href="#ballout">Meet BallouT</a>
@@ -97,6 +102,14 @@
               height="480"
               alt="BallouT gameplay: numbered balls rolling across a green puzzle grid"
             />
+          </article>
+          <article class="game" id="enterprise-centre" aria-labelledby="enterprise-centre-title">
+            <h2 id="enterprise-centre-title">The Enterprise Centre</h2>
+            <p class="feature-lede">
+              A short liminal horror adventure created as part of a Halloween Game Jam.
+              Do as your Dad tells you and don't wander around the Enterprise Centre.
+              This area is dangerous for little kids.
+            </p>
           </article>
           <article class="game" id="glenmafeen" aria-labelledby="glenmafeen-title">
             <h2 id="glenmafeen-title">Glenmafeen</h2>

@@ -16,6 +16,7 @@
   --font-brand: "Bricolage Grotesque", "Outfit", sans-serif;
   --font-metal: "Metal Mania", "Impact", fantasy;
   --font-celtic: "Celtic Gaelige", "Times New Roman", serif;
+  --font-sono: "Sono", sans-serif;
   --font-body: "Outfit", "Segoe UI", sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -23,6 +24,14 @@
 @font-face {
   font-family: "Celtic Gaelige";
   src: url("celtic_gaelige.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sono";
+  src: url("Sono-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -83,6 +92,9 @@ a {
 }
 
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   font-family: var(--font-brand);
   font-weight: 700;
   font-size: 0.82rem;
@@ -91,6 +103,13 @@ a {
   text-decoration: none;
   color: var(--brass-light);
   white-space: nowrap;
+}
+
+.logo {
+  width: 2.35rem;
+  height: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
 
 .nav {
@@ -486,6 +505,7 @@ a {
 }
 
 #glenmafeen,
+#enterprise-centre,
 #falling-angel {
   scroll-margin-top: 2.5rem;
 }
@@ -495,6 +515,14 @@ a {
   width: 100%;
   height: auto;
   margin-top: 1.15rem;
+}
+
+#enterprise-centre-title {
+  font-family: var(--font-sono);
+  font-weight: 600;
+  font-size: clamp(2.1rem, 5.4vw, 3.3rem);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
 }
 
 #glenmafeen-title {
